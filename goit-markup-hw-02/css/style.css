@@ -143,8 +143,12 @@ text-decoration: none;
  
 /*Footer*/
 
+footer {
+  background-color: #2F303A;
+}
+
 .contacts {
-  color: #ffffff;
+color: #ffffff;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
