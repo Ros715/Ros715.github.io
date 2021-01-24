@@ -8,7 +8,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-bg-color: #ffffff /*#e5e5e5*/;
+  --primary-bg-color: #e5e5e5;
 }
 html {
   box-sizing: border-box;
@@ -41,6 +41,7 @@ a {
 
 header {
   border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
 }
 
 .container {
@@ -86,7 +87,7 @@ header > .container {
 }
 .site-nav .item {
   margin-right: 50px;
-  background-color: var(--primary-bg-color) /*#e5e5e5*/;
+  /*background-color: var(--primary-bg-color)*/ /*#e5e5e5*/
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -298,15 +299,15 @@ header > .container {
   font-size: 16px;
 }
 .title-name {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: var(--title-text-color-color);
 }
 
 .profession {
-  margin-top: 0;
-  margin-bottom: 0px;
+  margin-top: 5px;
+  margin-bottom: 30px;
   text-transform: capitalize;
 }
 
@@ -433,7 +434,7 @@ footer {
 
 /*Portfolio*/
 .project-title {
-  background-color: #e5e5e5;
+  background-color: #eeeeee;
 }
 
 .example .section-filter {
@@ -484,7 +485,16 @@ footer {
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc((100% - (2 * 30px)) / 3);
+  width: 370px;
   outline: 1px solid #eeeeee;
+}
+
+.project-title {
+  background-color: #e5e5e5;
+}
+
+.foto-list {
+  background-color: #ffffff;
 }
 
 .foto-list > .link,
@@ -498,6 +508,7 @@ footer {
 
 .foto-list:nth-last-child(-n + 3) {
   margin-bottom: 0;
+  /*background-color: #ffffff;*/
 }
 .name-title {
   margin-bottom: 4px;
