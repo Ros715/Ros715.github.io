@@ -8,7 +8,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-bg-color: #e5e5e5;
+  --primary-bg-color: #ffffff /*#e5e5e5*/;
 }
 html {
   box-sizing: border-box;
@@ -86,7 +86,7 @@ header > .container {
 }
 .site-nav .item {
   margin-right: 50px;
-  background-color: #e5e5e5;
+  background-color: var(--primary-bg-color) /*#e5e5e5*/;
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -334,7 +334,6 @@ header > .container {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  border: 1px solid transparent;
 }
 
 .button-primary {
@@ -352,6 +351,38 @@ header > .container {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+/*Staff list*/
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
+}
+
+.section-title {
+}
+
+.employers-list > li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  /*
+  background-color: var(--hero-title-color);
+*/
+}
+
+.card {
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.title-name {
+  color: var(--title-text-color);
 }
 
 /*Footer*/
@@ -489,11 +520,6 @@ footer {
 
 .button-nav li {
   list-style-type: none;
-}
-
-.button-nav .filter:hover,
-.button-nav .filter:focus {
-  color: var(--accent-color);
 }
 
 .project-title {
