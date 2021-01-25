@@ -85,13 +85,13 @@ header > .container {
 .site-nav {
   display: flex;
 }
-.site-nav .item {
-  margin-right: 50px;
-  /*background-color: var(--primary-bg-color)*/ /*#e5e5e5*/
-}
-.site-nav .item + .item {
+/*.site-nav .item {
+  margin-right: 50px;}*/
+/*background-color: var(--primary-bg-color)*/ /*#e5e5e5*/
+
+/*.site-nav .item + .item {
   margin-left: 50px;
-}
+}*/
 /*.site-nav .item:no(:last-child) {
   margin-right: 50px;
 }*/
@@ -247,6 +247,7 @@ header > .container {
   padding-bottom: 94px;
 }
 .section-title {
+  margin-top: 0px;
   margin-bottom: 50px;
   font-size: 36px;
   color: var(--title-text-color);
