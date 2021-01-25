@@ -447,6 +447,7 @@ footer {
   padding-bottom: 94px;
 }
 .button-nav {
+  margin-top: 0;
   display: flex;
   justify-content: center;
   margin-bottom: 34px;
