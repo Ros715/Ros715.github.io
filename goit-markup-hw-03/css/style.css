@@ -130,9 +130,9 @@ header > .container {
   line-height: 1.14;
   text-decoration: none;
 }
-.auth-nav .item + .item {
+/*.auth-nav .item + .item {
   margin-left: 50px;
-}
+}*/
 
 .site-nav,
 .auth-nav {
