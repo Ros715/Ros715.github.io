@@ -175,11 +175,12 @@ header > .container {
   fill: var(--accent-color);
 }
 
-.contacts-item:hover .auth-icon,
-.contacts-item:focus .auth-icon {
+.auth-link:hover .auth-icon,
+.auth-link:focus .auth-icon {
   fill: var(--accent-color);
 }
-
+.asd {
+}
 .email-icon {
   height: 12px;
   width: 16px;
@@ -457,6 +458,14 @@ header > .container {
   width: 49px;
   height: 44px;
   fill: #afb1b8;
+}
+.foster-client {
+  width: 80px;
+  height: 42px;
+}
+.primary-clients {
+  width: 88px;
+  height: 45px;
 }
 
 .clients-list-link:hover,
