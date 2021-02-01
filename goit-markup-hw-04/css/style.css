@@ -580,9 +580,9 @@ footer {
 }
 
 /*Portfolio*/
-.project-title {
-  background-color: #eeeeee;
-}
+/*.project-title {
+  background-color: #eeeee;
+}*/
 
 .example .section-filter {
   display: none;
@@ -638,7 +638,7 @@ footer {
 }
 
 .project-title {
-  background-color: #e5e5e5;
+  /*background-color: #e5e5e5;*/
 }
 
 .foto-list {
