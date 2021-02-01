@@ -17,7 +17,7 @@
         />
 </head>
 <body>
-    
+
     <header>
         <div class="container">
         <nav class="nav main-nav">
@@ -30,28 +30,46 @@
         <li class="item"><a href="" class="link">Контакты</a></li>
     </ul>
         </nav>
-
+<!--versja bez :before-->
+<div class="clas">
     <ul class="auth-nav list">
         <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="link">
-                <div class="auth-div">
+            <a href="mailto:info@devstudio.com" class="link auth-link">
                         <svg class="email-icon auth-icon">
                             <use href="./images/sprite.svg#envelope"></use>
                         </svg>
 
-                <span class="email-text auth-text">info@devstudio.com</span>
-                </div>
+                <span class="auth-text">info@devstudio.com</span>
             </a></li>
         <li class="contacts-item">
-            <a href="tel:+380961111111" class="link">
-                <div class="auth-div">
+            <a href="tel:+380961111111" class="link auth-link">
                         <svg class="tel-icon auth-icon">
                             <use href="./images/sprite.svg#smartphone"></use>
                         </svg>
-                <span class="tel-text auth-text">+38 096 111 11 11</span>
-                </div>
+                <span class="auth-text">+38 096 111 11 11</span>
             </a></li>
-      </ul>
+    </ul>
+    </div>
+<!---->
+<!--versja z :before
+    <ul class="auth-nav list">
+        <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="link auth-link">
+                <div class="dev-auth dev-auth-email">
+                <span class="auth-text auth-email">info@devstudio.com</span>
+                </div>
+            </a>
+        </li>
+        <li class="contacts-item">
+            <a href="tel:+380961111111" class="link auth-link">
+                <div class="dev-auth dev-auth-tel">
+                <span class="auth-text auth-tel">+38 096 111 11 11</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+-->
+
     </div>
     </header>
 
