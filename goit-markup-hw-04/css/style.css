@@ -8,7 +8,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-bg-color: #e5e5e5;
+  --primary-bg-color: #ffffff;
 }
 html {
   box-sizing: border-box;
@@ -159,40 +159,6 @@ header > .container {
 .auth-nav {
   display: flex;
 }
-
-/*wersja z :before
-.auth-text {
-  margin-left: 10px;
-}
-.dev-auth::before {
-  display: block;
-  content: "";
-  height: 16px;
-  width: 16px;
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center;
-  background-color: #f0f0f0;
-  fill: red;
-}
-.dev-auth::before:hover,
-.dev-auth::before:active {
-  fill: var(--accent-color);
-}
-.auth-link,
-.dev-auth {
-  display: flex;
-}
-.dev-auth-email::before {
-  background-image: url("../images/envelope.svg");
-}
-.dev-auth-tel::before {
-  background-image: url("../images/smartphone.svg");
-  fill: green;
-}
-koniec wersji z :before*/
-
-/*wersja bez :before*/
 .auth-link {
   display: flex;
 }
