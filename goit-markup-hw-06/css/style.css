@@ -1197,15 +1197,85 @@ footer {
   transition-delay: 0;
 }
 
-.visually-hiden {
-  /*does not work*/
-  background-color: #2196f3;
+/*
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
-.checkbox {
+.check-box {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 13px;
 }
+*/
+
+/*$$$$$$$$$$$$$$$$$*/
+.contact-form-checkbox-div {
+  padding-top: 25px;
+  margin-left: 12px;
+}
+
+.checkbox2 {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox2 > span {
+  color: var(--primary-text-color);
+  padding-left: 7px;
+}
+
+.link-conditions {
+  color: var(--accent-color);
+}
+
+.checkbox2 > input {
+  height: 15px;
+  width: 16px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  border: 2px solid #000000;
+  /*border-radius: 4px;*/
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.checkbox2 > input:checked {
+  border: none;
+  background-color: var(--accent-color);
+}
+
+.checkbox2 > input:checked + span::before {
+  /*content: "\2713";*/
+  display: block;
+  /*text-align: center;*/
+  position: absolute;
+  left: 2px; /*0.7rem;*/
+  top: 0px; /*0.2rem;*/
+  width: 11px;
+  height: 8px;
+
+  content: url("../images/Vector_4.svg");
+}
+
+/*.checkbox2 > input:active {
+  border: 2px solid #000000;
+}*/
+/*$$$$$$$$$$$$$$$$$*/
+
 .contact-form-label-policy .link {
   color: #2196f3;
   margin-bottom: 40px;
@@ -1222,6 +1292,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 
 .contact-form-btn {

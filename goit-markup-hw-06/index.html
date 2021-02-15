@@ -460,13 +460,28 @@
         pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
     <input name="user-email" type="email" class="contact-form-input" placeholder="Your email*" required>
 -->
-    <div class="contact-form-input-div checkbox">
+<!--
+    <div class="contact-form-input-div check-box">
     <input type="checkbox" name="user-policy" id="policy-check" class="contact-form-check-policy visually-hidden">
     <label for="policy-check" class="contact-form-label-policy">
         Соглашаюсь с рассылкой и принимаю 
         <a href="" class="link">Условия договора</a>
     </label>
     </div>
+-->
+
+<!--=========================-->
+<!--https://dev.to/proticm/styling-html-checkboxes-is-super-easy-302o-->
+    <div class="contact-form-checkbox-div">
+<label class="checkbox2">
+    <input type="checkbox" />
+    <span>Соглашаюсь с рассылкой и принимаю
+    <a href="" class="link-conditions link">Условия договора</a></span>
+</label>
+    </div>
+<!--=========================-->
+
+
 
     <div class="contact-form-btn-wrapper">
         <button type="submit" class="contact-form-btn">Отправить</button>
