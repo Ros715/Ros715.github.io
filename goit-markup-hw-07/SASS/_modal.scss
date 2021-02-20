@@ -1,0 +1,242 @@
+@import "./def";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all $transition-duration $transition-timing-function;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  display: block;
+}
+.modal__close-icon {
+  width: 28px;
+  height: 28px;
+  fill: #000000;
+}
+
+/* contaact form - text inputs */
+
+.contact-form {
+  width: inherit;
+  height: inherit;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px 0 #ccc;
+  padding: 40px;
+  display: block;
+}
+
+.contact-form__title {
+  padding-left: 0px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  /*text-align: center;*/
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.contact-form__input-div {
+  padding-top: 10px;
+}
+
+.contact-form__label {
+  color: #757575;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 16px;
+  letter-spacing: 0.01em;
+}
+
+.contact-form__input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.contact-form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+
+  @include transition; //border-color, color;
+}
+
+.contact-form__message {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  resize: none;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  @include transition; //border-color, color;
+}
+
+.contact-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+
+  @include transition; //fill, color;
+}
+
+.contact-form__input:focus + .contact-form__icon {
+  fill: $accent-color;
+}
+
+.contact-form__input:focus,
+.contact-form__message:focus {
+  outline: none;
+  border-color: $accent-color;
+}
+
+/* contact form - checkbox */
+
+.commit {
+  padding-top: 25px;
+  margin-left: 12px;
+}
+
+.commit__label {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.commit__text {
+  color: $primary-text-color;
+  padding-left: 7px;
+}
+
+.commit__link {
+  color: $accent-color;
+}
+
+.commit__input {
+  height: 15px;
+  width: 16px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+  border: 2px solid #000000;
+  /*border-radius: 4px;*/
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.commit__input:checked {
+  border: none;
+  background-color: $accent-color;
+}
+
+.commit__input:checked + .commit__text::before {
+  /*content: "\2713";*/
+  display: block;
+  /*text-align: center;*/
+  position: absolute;
+  left: 2px; /*0.7rem;*/
+  top: 0px; /*0.2rem;*/
+  width: 11px;
+  height: 8px;
+
+  content: url("../images/Vector_4.svg");
+}
+
+/* contact form - button */
+
+.contact-form__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.contact-form__btn {
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+  /*border: 1px solid #333;*/
+  background-color: transparent;
+  border: transparent;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  @include transition; //background-color, color;
+}
+
+.contact-form__btn:hover {
+  background-color: rgba(24, 140, 232, 1);
+}

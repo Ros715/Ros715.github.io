@@ -1,0 +1,54 @@
+@import "./def";
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $primary-bg-color;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.clients__link {
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  background-color: $primary-bg-color;
+
+  @include transition; //background-color, color, border;
+}
+.clients__icon {
+  width: 49px;
+  height: 44px;
+  fill: #afb1b8;
+
+  @include transition; //background-color, color, fill;
+}
+.clients__icon--foster {
+  width: 80px;
+  height: 42px;
+}
+.clients__icon--primary {
+  width: 88px;
+  height: 45px;
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients__icon:hover,
+.clients__icon:focus {
+  /*background-color: #afb1b8;*/
+}
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
+  fill: #2196f3;
+}

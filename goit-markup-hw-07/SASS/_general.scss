@@ -1,0 +1,76 @@
+@import "./def";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+:hover,
+:focus {
+  transition-timing-function: $transition-timing-function;
+  transition-duration: $transition-duration;
+}
+a {
+  cursor: pointer;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  color: inherit;
+  font-weight: 500;
+}
+
+.button {
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  color: $title-text-color;
+}
+
+.none {
+  display: none;
+}

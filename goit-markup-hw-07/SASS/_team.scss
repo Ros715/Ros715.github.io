@@ -1,0 +1,79 @@
+@import "./def";
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+}
+.team__list {
+  margin-bottom: 0;
+  display: flex;
+}
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+.team__foto {
+  display: block;
+}
+.team__card {
+  padding: 30px;
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team__name {
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: $title-text-color;
+}
+
+.team__profession {
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+/*social list*/
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list__item {
+  margin-bottom: 30px;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  @include transition; //background-color, color, fill;
+}
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: #2196f3;
+}
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
+  fill: #ffffff;
+}

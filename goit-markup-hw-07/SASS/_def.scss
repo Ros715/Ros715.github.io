@@ -1,0 +1,13 @@
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196f3;
+$primary-bg-color: #ffffff;
+$transition-duration: 250ms;
+$transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin transition {
+  transition-property: all;
+  transition-duration: $transition-duration;
+  transition-timing-function: $transition-timing-function;
+  transition-delay: 0;
+}
