@@ -1,0 +1,35 @@
+@import "../utils/vars";
+@import "../utils/mixins";
+
+.works {
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    display: block;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__text {
+    position: absolute;
+
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    bottom: 3px;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    margin: 0 auto;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    padding-top: 27px;
+  }
+}
