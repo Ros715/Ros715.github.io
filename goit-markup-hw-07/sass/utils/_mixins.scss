@@ -1,8 +1,0 @@
-@import "./vars";
-
-@mixin transition {
-  transition-property: all;
-  transition-duration: $transition-duration;
-  transition-timing-function: $transition-timing-function;
-  transition-delay: 0;
-}
