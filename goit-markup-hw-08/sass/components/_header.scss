@@ -1,0 +1,446 @@
+@import "../utils/vars";
+@import "../utils/mixins";
+
+@media screen and (max-width: 768px) {
+  .site-nav,
+  .auth-nav {
+    display: none;
+  }
+
+  .header {
+    & .container {
+      border-bottom: 1px solid #ececec;
+      background-color: #ffffff;
+      //position: relative;
+      //height: 60px;
+      //width: 100%;
+      //max-width: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__logo-link {
+      //position: absolute;
+      //align-items: center;
+      //left: 16px;
+      //top: 16px;
+      //padding: 0px;
+      //margin: 16px;
+    }
+    &__logo-img {
+      width: 134px;
+      height: 28px;
+      margin: 16px;
+    }
+    &__menu-btn {
+      //position: absolute;
+      right: 25px;
+      height: 100%;
+      background: transparent;
+      border: none;
+      align-items: center;
+      margin-right: 0px;
+    }
+    &__menu-img {
+      width: 24px;
+      height: 16px;
+      fill: #000000;
+      background: transparent;
+      @include transition; //fill
+    }
+    &__menu-btn:hover &__menu-img,
+    &__menu-btn:focus &__menu-img {
+      fill: #2196f3;
+    }
+  }
+
+  .mobile-menu {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    max-width: 480px;
+    height: 100vh;
+    top: 0px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    //or
+    //left: 0px;
+    padding: 48px 40px;
+
+    &__close-btn {
+      position: absolute;
+      right: 25px;
+      top: 21px;
+      background: transparent;
+      border: none;
+    }
+    &__close-img {
+      width: 19px;
+      height: 19px;
+      fill: #212121;
+      @include transition; //fill
+    }
+    &__close-btn:hover &__close-img,
+    &__close-btn:focus &__close-img {
+      fill: #2196f3;
+    }
+
+    &__list {
+      position: absolute;
+      display: block;
+      list-style: none;
+      text-align: left;
+      top: 48px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 47px;
+      text-align: left;
+      letter-spacing: 0.02em;
+      color: #212121;
+      text-decoration: none;
+      @include transition; //color
+
+      &.current,
+      &:hover,
+      &:focus {
+        color: #2196f3;
+      }
+    }
+  }
+
+  .mobile-menu-tel {
+    position: absolute;
+    top: 562px;
+    text-align: left;
+    &__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: 0.02em;
+      color: #757575;
+      text-decoration: none;
+      @include transition; //color
+      &:hover,
+      &:focus {
+        color: #2196f3;
+      }
+    }
+  }
+
+  .mobile-menu-email {
+    position: absolute;
+    top: 634px;
+    text-align: left;
+    &__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+      color: #757575;
+      text-decoration: none;
+      @include transition; //color
+      &:hover,
+      &:focus {
+        color: #2196f3;
+      }
+    }
+  }
+
+  .mobile-menu-social {
+    position: absolute;
+    top: 726px;
+    left: 0px;
+    text-align: left;
+    list-style: none;
+    display: flex;
+    &__item:not(:last-child) {
+      margin-right: 20px;
+    }
+    &__link {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: #2196f3;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-btn {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    & .container {
+      border-bottom: 1px solid #ececec;
+      background-color: #ffffff;
+      //width: 100%;
+      //max-width: 768px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      justify-content: space-between;
+    }
+    &__logo-link {
+    }
+    &__logo-img {
+      width: 134px;
+      height: 28px;
+      margin: 26px 15px;
+      margin-right: 88px;
+    }
+  }
+
+  .site-nav {
+    display: flex;
+    letter-spacing: 0.02em;
+    margin-right: 84px;
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+    &__link {
+      padding: 32px 0px;
+      //display: block;
+      color: $title-text-color;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      //padding-top: 32px;
+      //padding-bottom: 32px;
+
+      @include transition; //background-color, color, border-bottom;
+
+      border-bottom: 4px solid transparent;
+    }
+
+    &__link:hover:not(.current),
+    &__link:focus:not(.current) {
+      color: $accent-color;
+      border-bottom: 4px solid $accent-color;
+    }
+
+    &__link.current {
+      color: $accent-color;
+    }
+  }
+
+  .auth-nav {
+    letter-spacing: 0.02em;
+    display: block;
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      color: $primary-text-color;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      display: flex;
+
+      @include transition; //background-color, color, fill;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+      fill: $accent-color;
+    }
+
+    &__text {
+      margin-left: 5px;
+    }
+
+    &__icon {
+      fill: $primary-text-color;
+
+      @include transition; //fill;
+    }
+  }
+
+  .email-icon {
+    height: 12px;
+    width: 16px;
+  }
+  .tel-icon {
+    height: 16px;
+    width: 10px;
+  }
+
+  .mobile-menu,
+  .mobile-menu__top,
+  .mobile-menu__main,
+  .header__menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__menu-btn {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header {
+    & .container {
+      //border-bottom: 1px solid #ececec;
+      background-color: #ffffff;
+      //width: 100%;
+      //max-width: 1600px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      justify-content: space-between;
+    }
+    &__logo-link {
+    }
+    &__logo-img {
+      width: 145px;
+      height: 31px;
+      margin-left: 0px; //215px;
+      margin-right: 93px;
+      margin-top: 24px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .site-nav {
+    display: flex;
+    letter-spacing: 0.02em;
+    margin-right: 300px;
+
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+    &__link {
+      padding: 32px 0px;
+      //display: block;
+      color: $title-text-color;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      //padding-top: 32px;
+      //padding-bottom: 32px;
+
+      @include transition; //background-color, color, border-bottom;
+
+      border-bottom: 4px solid transparent;
+    }
+
+    &__link:hover:not(.current),
+    &__link:focus:not(.current) {
+      color: $accent-color;
+      border-bottom: 4px solid $accent-color;
+    }
+
+    &__link.current {
+      color: $accent-color;
+    }
+  }
+
+  .auth-nav {
+    letter-spacing: 0.02em;
+    display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__link {
+      color: $primary-text-color;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      display: flex;
+
+      @include transition; //background-color, color, fill;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: $accent-color;
+      fill: $accent-color;
+    }
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+      fill: $accent-color;
+    }
+
+    &__text {
+      margin-left: 5px;
+    }
+
+    &__icon {
+      fill: $primary-text-color;
+
+      @include transition; //fill;
+    }
+  }
+
+  .email-icon {
+    height: 12px;
+    width: 16px;
+  }
+  .tel-icon {
+    height: 16px;
+    width: 10px;
+  }
+
+  .mobile-menu,
+  .mobile-menu__top,
+  .mobile-menu__main,
+  .header__menu-btn {
+    display: none;
+  }
+}
+
+.test11 {
+  height: 40px;
+  background: red;
+}

@@ -1,0 +1,115 @@
+@import "../utils/vars";
+@import "../utils/mixins";
+
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  @media screen and (max-width: 767px) {
+    height: 400px;
+    padding-top: 118px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/hero.jpg");
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/hero@2x.jpg");
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    padding-top: 118px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/hero.jpg");
+  }
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/hero@2x.jpg");
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/hero.jpg");
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/desktop/hero@2x.jpg");
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media screen and (max-width: 767px) {
+      font-size: 26px;
+      line-height: 42px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 42px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 60px;
+    }
+  }
+
+  &__button {
+    color: #ffffff;
+    background-color: $accent-color;
+    padding: 11px 34px;
+    min-width: 200px;
+    font-weight: 700;
+    line-height: 1.88;
+    text-decoration: none;
+    text-align: center;
+  }
+}
