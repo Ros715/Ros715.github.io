@@ -303,17 +303,15 @@
   }
 
   .mobile-menu,
-  .mobile-menu__top,
-  .mobile-menu__main,
   .header__menu-btn {
     display: none;
+  }
+  .mobile-menu {
+    height: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header__menu-btn {
-    display: none;
-  }
   .nav {
     display: flex;
     align-items: center;
@@ -433,10 +431,11 @@
   }
 
   .mobile-menu,
-  .mobile-menu__top,
-  .mobile-menu__main,
   .header__menu-btn {
     display: none;
+  }
+  .mobile-menu {
+    height: 0;
   }
 }
 

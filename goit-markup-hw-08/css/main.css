@@ -108,6 +108,7 @@ a {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -377,17 +378,15 @@ a {
     width: 10px;
   }
   .mobile-menu,
-  .mobile-menu__top,
-  .mobile-menu__main,
   .header__menu-btn {
     display: none;
+  }
+  .mobile-menu {
+    height: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .header__menu-btn {
-    display: none;
-  }
   .nav {
     display: flex;
     align-items: center;
@@ -487,10 +486,11 @@ a {
     width: 10px;
   }
   .mobile-menu,
-  .mobile-menu__top,
-  .mobile-menu__main,
   .header__menu-btn {
     display: none;
+  }
+  .mobile-menu {
+    height: 0;
   }
 }
 
