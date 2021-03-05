@@ -9,7 +9,10 @@
   margin-top: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left; /*mobile*/
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   margin-bottom: 34px;
   color: $title-text-color;
   font-weight: 500;
@@ -18,12 +21,14 @@
   text-align: center;
   letter-spacing: 0.03em;
   /*text-decoration: none;*/
+  list-style-type: none;
+  padding: 0px;
 
   &__item:not(:last-child) {
     margin-right: 8px;
   }
   &__item {
-    list-style-type: none;
+    //list-style-type: none;
     margin-bottom: 8px;
   }
 

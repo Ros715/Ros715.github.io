@@ -116,8 +116,10 @@ a {
   .auth-nav {
     display: none;
   }
-  .header .container {
+  .header {
     border-bottom: 1px solid #ececec;
+  }
+  .header .container {
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -150,6 +152,7 @@ a {
   .header__menu-btn:focus .header__menu-img {
     fill: #2196f3;
   }
+  /*---mobile-menu---*/
   .mobile-menu {
     z-index: 1;
     position: absolute;
@@ -211,7 +214,7 @@ a {
   }
   .mobile-menu-tel {
     position: absolute;
-    top: 562px;
+    bottom: 166px;
     text-align: left;
   }
   .mobile-menu-tel__link {
@@ -233,7 +236,7 @@ a {
   }
   .mobile-menu-email {
     position: absolute;
-    top: 634px;
+    bottom: 106px;
     text-align: left;
   }
   .mobile-menu-email__link {
@@ -255,7 +258,7 @@ a {
   }
   .mobile-menu-social {
     position: absolute;
-    top: 726px;
+    bottom: 20px;
     left: 0px;
     text-align: left;
     list-style: none;
@@ -284,13 +287,17 @@ a {
     display: flex;
     align-items: center;
   }
-  .header .container {
+  .header {
     border-bottom: 1px solid #ececec;
+  }
+  .header .container {
     background-color: #ffffff;
     display: flex;
     align-items: center;
     text-align: left;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
   .header__logo-img {
     width: 134px;
@@ -328,6 +335,7 @@ a {
   }
   .site-nav__link.current {
     color: #2196f3;
+    border-bottom: 4px solid #2196f3;
   }
   .auth-nav {
     letter-spacing: 0.02em;
@@ -391,6 +399,9 @@ a {
     display: flex;
     align-items: center;
   }
+  .header {
+    border-bottom: 1px solid #ececec;
+  }
   .header .container {
     background-color: #ffffff;
     display: flex;
@@ -401,7 +412,7 @@ a {
   .header__logo-img {
     width: 145px;
     height: 31px;
-    margin-left: 0px;
+    margin-left: 15px;
     margin-right: 93px;
     margin-top: 24px;
     margin-bottom: 25px;
@@ -436,6 +447,7 @@ a {
   }
   .site-nav__link.current {
     color: #2196f3;
+    border-bottom: 4px solid #2196f3;
   }
   .auth-nav {
     letter-spacing: 0.02em;
@@ -1519,7 +1531,8 @@ a {
   margin-top: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
+  /*mobile*/
   margin-bottom: 34px;
   color: #212121;
   font-weight: 500;
@@ -1528,6 +1541,14 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   /*text-decoration: none;*/
+  list-style-type: none;
+  padding: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    justify-content: center;
+  }
 }
 
 .portfolio-buttons__item:not(:last-child) {
@@ -1535,7 +1556,6 @@ a {
 }
 
 .portfolio-buttons__item {
-  list-style-type: none;
   margin-bottom: 8px;
 }
 
