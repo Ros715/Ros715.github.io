@@ -525,7 +525,7 @@ a {
   padding-bottom: 200px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero {
     height: 400px;
     padding-top: 118px;
@@ -533,7 +533,7 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero@2x.jpg");
   }
@@ -582,7 +582,7 @@ a {
   color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero__title {
     font-size: 26px;
     line-height: 42px;
@@ -614,7 +614,7 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .features {
     padding-top: 88px;
     padding-bottom: 100px;
@@ -834,7 +834,7 @@ a {
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   margin-right: 0px;
 }
 
@@ -856,6 +856,27 @@ a {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .social-list {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-list {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 .social-list__item {
   margin-bottom: 30px;
 }
@@ -864,7 +885,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
+  width: 24px;
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
@@ -953,7 +974,7 @@ a {
   height: 45px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .clients__link {
     width: 210px;
     height: 90px;
@@ -1155,7 +1176,7 @@ a {
   fill: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .footer .container {
     display: block;
     text-align: center;
@@ -1490,7 +1511,7 @@ a {
   background-color: #188ce8;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1594,7 +1615,7 @@ a {
   background-color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .portfolio-cards {
     margin-right: 0;
   }

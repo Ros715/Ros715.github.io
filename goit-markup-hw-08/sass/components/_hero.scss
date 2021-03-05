@@ -16,7 +16,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     height: 400px;
     padding-top: 118px;
     background-image: linear-gradient(
@@ -26,7 +26,7 @@
       ),
       url("../images/mobile/hero.jpg");
   }
-  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2) {
+  @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -88,7 +88,7 @@
     text-transform: uppercase;
     color: #ffffff;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       font-size: 26px;
       line-height: 42px;
     }
