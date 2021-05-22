@@ -17,13 +17,11 @@ const images = [
 ];
 
 const ulRef = document.getElementById("gallery");
+ulRef.setAttribute("style", "display: flex;");
 let htmlText = "";
 for (const image of images) {
-    const liText = "<li>" +
-        "<img src='" + image.url + "' alt='" + image.alt +
-        "'></li>";
+  const liText = `<li><img src="${image.url}" alt="${image.alt}" /></li>`;
     //console.log(liText);
-    htmlText += liText;
-
+  htmlText += liText;
 }
 ulRef.insertAdjacentHTML("beforeend", htmlText);
