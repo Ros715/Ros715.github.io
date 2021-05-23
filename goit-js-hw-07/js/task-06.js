@@ -1,5 +1,5 @@
 const inputRef = document.getElementById("validation-input");
-inputRef.addEventListener("change", onChange);
+inputRef.addEventListener("input", onChange);
 
 function onChange() {
     const text = inputRef.value;

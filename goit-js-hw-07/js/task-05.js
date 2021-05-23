@@ -1,6 +1,6 @@
 const inputRef = document.getElementById("name-input");
 const outputRef = document.getElementById("name-output");
-inputRef.addEventListener("change", report);
+inputRef.addEventListener("input", report);
 
 function report() {
     const text = inputRef.value;

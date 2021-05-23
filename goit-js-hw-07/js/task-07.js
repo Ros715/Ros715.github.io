@@ -1,6 +1,6 @@
 const inputRef = document.getElementById("font-size-control");
 //display.log(inputRef);
-inputRef.addEventListener("change", onChange);
+inputRef.addEventListener("input", onChange);
 const outputRef = document.getElementById("text");
 
 function onChange() {
