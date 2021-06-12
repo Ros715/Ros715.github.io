@@ -175,74 +175,31 @@ module.exports = [{
   "price": 240,
   "ingredients": ["Круглый рис", "Мини цукини", "Тертый имбирь", "Грибы шиитаке", "Соевый соус", "Кунжутное масло"]
 }];
+},{}],"menu-template.json":[function(require,module,exports) {
+module.exports = {
+  "template": '<li class="menu__item"><article class="card"><img src="{{image}}" alt="{{name}}" class="card__image" /><div class="card__content"><h2 class="card__name">{{name}}</h2><p class="card__price"><i class="material-icons"> monetization_on </i>{{price}} кредитов</p><p class="card__descr">{{description}}</p><ul class="tag-list">{{#each ingredients}}<li class="tag-list__item">{{this}}</li>{{/each}}</ul></div><button class="card__button button"><i class="material-icons button__icon"> shopping_cart </i>В корзину</button></article></li>'
+};
 },{}],"menu.js":[function(require,module,exports) {
 "use strict";
 
 var _menu = _interopRequireDefault(require("./menu.json"));
 
+var _menuTemplate = _interopRequireDefault(require("./menu-template.json"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var templateText1 = '<li class="menu__item">';
-templateText1 += '<article class="card">';
-templateText1 += '<img src="{{image}}" alt="{{name}}" class="card__image" />';
-templateText1 += '<div class="card__content">';
-templateText1 += '<h2 class="card__name">{{name}}</h2>';
-templateText1 += '<p class="card__price">';
-templateText1 += '<i class="material-icons"> monetization_on </i>{{price}} кредитов</p>';
-templateText1 += '<p class="card__descr">{{description}}</p>';
-var templateText2 = '<li class="tag-list__item">{{tag}}</li>';
-var templateText3 = '</div><button class="card__button button">';
-templateText3 += '<i class="material-icons button__icon"> shopping_cart </i>';
-templateText3 += 'В корзину</button>';
-templateText3 += '</article></li>';
-var template1 = Handlebars.compile(templateText1);
-var template2 = Handlebars.compile(templateText2);
-var template3 = Handlebars.compile(templateText3);
+//const menuTemplate = document.querySelector('#menu-template').innerHTML.trim();
+//const template = Handlebars.compile(menuTemplate);
+const template = Handlebars.compile(_menuTemplate.default.template);
 var ulHTML = '';
 
 for (const dish of _menu.default) {
-  //console.log(dish);
-  var tagList = '';
-
-  for (const tag of dish.ingredients) {
-    tagList += template2({
-      tag: tag
-    });
-  }
-
-  ulHTML += template1(dish);
-  ulHTML += '<ul class="tag-list">' + tagList + '</ul>';
-  ulHTML += template3(dish); //console.log(template1(dish));
-  //console.log(template3(dish));
-} //console.log(ulHTML);
-
+  ulHTML += template(dish);
+}
 
 const ulRef = document.querySelector('.js-menu');
 ulRef.insertAdjacentHTML("beforeend", ulHTML);
-const Theme = {
-  LIGHT: 'light-theme',
-  DARK: 'dark-theme'
-};
-const switchRef = document.getElementById('theme-switch-toggle');
-const bodyRef = document.querySelector('body');
-switchRef.addEventListener('change', () => {
-  //console.log(switchRef.checked);
-  if (switchRef.checked) {
-    bodyRef.classList.remove(Theme.LIGHT);
-    bodyRef.classList.add(Theme.DARK);
-    localStorage.setItem('theme', Theme.DARK);
-  } else {
-    bodyRef.classList.remove(Theme.DARK);
-    bodyRef.classList.add(Theme.LIGHT);
-    localStorage.setItem('theme', Theme.LIGHT);
-  }
-});
-
-if (localStorage.getItem('theme') === Theme.DARK) {
-  switchRef.checked = true;
-  bodyRef.classList.add(Theme.DARK);
-}
-},{"./menu.json":"menu.json"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./menu.json":"menu.json","./menu-template.json":"menu-template.json"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -270,7 +227,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49531" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52488" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
