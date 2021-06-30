@@ -1,0 +1,39 @@
+.div-input {
+  //display: flex;
+}
+
+#country-name {
+  margin-left: 200px;
+  margin-top: 30px;
+  height: 40px;
+}
+
+/*
+.message-too-many {
+    display: none;
+}
+*/
+
+.countries {
+  margin-left: 200px;
+  margin-top: 40px;
+}
+
+.country-data {
+  display: flex;
+  align-items: center;
+}
+
+.country-name {
+  //text-align: center;
+  margin-left: 200px;
+  font-size: 70px;
+}
+
+.country-text {
+  margin-left: 200px;
+}
+
+.country-flag {
+  margin-left: 200px;
+}
