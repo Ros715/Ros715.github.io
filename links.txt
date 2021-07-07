@@ -1,5 +1,6 @@
 https://ros715.github.io/goit-js-hw-10-food-service/dist/
 https://ros715.github.io/goit-js-hw-12-countries-dist/
+https://ros715.github.io/goit-js-hw-13-image-finder-dist/
 
 
 https://ros715.github.io/goit-js-hw-11-color-switch/
@@ -10,6 +11,13 @@ https://github.com/Ros715/Ros715.github.io/tree/main/goit-js-hw-11-color-switch
 https://github.com/Ros715/Ros715.github.io/tree/main/goit-js-hw-11-promisification
 https://github.com/Ros715/Ros715.github.io/tree/main/goit-js-hw-11-timer
 https://github.com/Ros715/Ros715.github.io/tree/main/goit-js-hw-12-countries
+https://github.com/Ros715/Ros715.github.io/tree/main/goit-js-hw-13-image-finder
 
 https://pixabay.com/api/
 MariiaRos / 12345678 / key=22353815-5fa21056c210e4ef7062efe69
+
+https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+https://basiclightbox.electerious.com/
+https://pixabay.com/api/docs/
+https://www.npmjs.com/package/lodash.debounce
+https://github.com/sciactive/pnotify
