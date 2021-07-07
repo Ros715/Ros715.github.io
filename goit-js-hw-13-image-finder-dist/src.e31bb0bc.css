@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+.fixed {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+}
+
+#keys-input,
+#button-next,
+.pixabay {
+  margin-left: 30px;
+}
+
+#filler {
+  height: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.photo-card {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.stats {
+  display: flex;
+}
+
+.stats-item {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */

@@ -1,3 +1,10 @@
+/*
+first:  npm install @pnotify/core
+in index.html <head>:
+    <link href="../node_modules/@pnotify/core/dist/PNotify.css" rel="stylesheet" type="text/css" />
+    <link href="../node_modules/@pnotify/core/dist/BrightTheme.css" rel="stylesheet" type="text/css" />
+*/
+
 import { alert, Stack } from '@pnotify/core';
 
 const noticeStack = new Stack({
